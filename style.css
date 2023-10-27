@@ -19,16 +19,20 @@
     display: flex;
     /* Defines how to distribute the empty space between child elements */
     justify-content: space-between;
-    padding: 60px;
+    padding: 40px;
     background: #176349;
     color: #a8cbce;
   }
 
+  #name {
+    padding-top: 2%;
+  }
   .photo {
-    border-radius: 40px 60px 60px 40px;
-    position: fixed;
-    top: 0;
-    left: 0;
+    border: 5px solid #13293d;
+    border-radius: 70px 70px 70px 70px;
+    position: absolute;
+    top: 10px;
+    left: 35px;
 
   }
   
@@ -54,7 +58,10 @@
     flex: 2 1 200px;
   }
   
-  .info {
-    display: inline;
-    color: antiquewhite;
+  .header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
   }
