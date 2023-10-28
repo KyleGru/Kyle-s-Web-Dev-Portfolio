@@ -1,39 +1,63 @@
+:root {
+  --light: whitesmoke;
+  --font: monospace;
+}
 * {
     box-sizing: border-box;
   }
   
   body {
-    font-family: monospace;
-    margin: 0;
+    background-image:url(https://media.istockphoto.com/id/1341408852/video/colored-smoke-on-a-dark-background-blue-and-red-light-with-smoke.jpg?s=640x640&k=20&c=v2DQUY8IVbli_6FH_9KAs6YWRXlDdYiBJHfp7JFh7NY=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
   }
   
-  main {
-    /* Turns this element into a flexbox */
-    display: flex;
-    /* Forces elements to the next line if they don't fit */
-    flex-wrap: wrap;
-    margin-top: 2%;
-  }
-  
-  .main-header {
-    display: flex;
-    /* Defines how to distribute the empty space between child elements */
-    justify-content: space-between;
-    padding: 40px;
-    background: #176349;
-    color: #a8cbce;
+  .header {
+   padding: 10px;
+   font-family: var(--font);
+   color: var(--light);
   }
 
-  #name {
-    padding-top: 2%;
+  .header h1 {
+    display: inline-block;
+    font-size: 50px;
   }
-  .photo {
-    border: 5px solid #13293d;
-    border-radius: 70px 70px 70px 70px;
-    position: absolute;
-    top: 10px;
-    left: 35px;
 
+  .header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+  }
+
+  .header nav ul li {
+    padding-right: 10px;
+    padding-top: 15px;
+    float: right;
+    font-family: var(--font);
+    font-size: 25px;
+    list-style-type: none;
+    color: var(--light);
+  }
+
+  a {
+    color: var(--light);
+    text-decoration: none;
+  }
+
+  .headshot {
+    margin-left: 25px;
+    border: var(--light) solid 5px;
+  }
+
+  .about-me {
+    display: inline-block;
+    width: 100%;
+    font-family: var(--font);
+    font-size: 20px;
+    padding-left: 25px;
+    color: var(--light);
   }
   
   .card {
@@ -42,6 +66,8 @@
     flex: 1 0 200px;
     padding: 10px;
     text-align: center;
+    font-family: var(--font);
+    color: var(--light);
     border-style: solid;
     border-width: 1px;
   }
@@ -62,6 +88,5 @@
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
   }
