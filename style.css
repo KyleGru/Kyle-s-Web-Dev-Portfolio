@@ -10,7 +10,6 @@
     background-image:url(https://media.istockphoto.com/id/1341408852/video/colored-smoke-on-a-dark-background-blue-and-red-light-with-smoke.jpg?s=640x640&k=20&c=v2DQUY8IVbli_6FH_9KAs6YWRXlDdYiBJHfp7JFh7NY=);
     background-repeat: no-repeat;
     background-size: cover;
-    
   }
   
   .header {
@@ -18,12 +17,14 @@
    font-family: var(--font);
    color: var(--light);
    background-color: #13293d70;
+   border-radius: 70px 0 70px 0;
   }
 
   .header h1 {
     display: inline-block;
     font-size: 50px;
     background-color: rgba(247, 69, 69, 0.541);
+    border-radius: 15px 0 15px 0;
   }
 
   .header nav {
@@ -53,9 +54,10 @@
     color: var(--light);
     font-size: 50px;
     float:right;
-    margin-right: 15px;
-    margin-top: 150px;
-    background-color: blue;
+    padding: 25px 25px 25px 25px;
+    background-color: #13293d70;
+    border-radius: 50% 0 50% 0;
+    
     
   }
 
@@ -66,11 +68,11 @@
   }
 
   .about-me {
-    display: inline-block;
+    display: inline-flex;
     width: 25%;
     font-family: var(--font);
     font-size: 20px;
-    margin-top: 150px;
+    margin-top: 300px;
     padding-left: 25px;
     color: var(--light);
     border-right: var(--light) solid 2px;
@@ -82,12 +84,15 @@
   }
 
   .info {
-   display: inline-block;
+   display: flex;
+   flex-direction: row;
    font-family: var(--font);
    font-size: 20px;
    color: var(--light);
    margin-left: 430px;
+   margin-bottom: 100px;
    padding-bottom: 25px;
+   padding-top: 25px;
    text-align: justify;
    
   }
@@ -109,21 +114,63 @@
   }
   
   .card h2 {
+    display: flex;
     padding: 20px;
     background: #13293d;
     color: var(--light);
   }
 
   .card p {
+    display: flex;
     margin-left: 5px;
   }
 
-  #big {
-    height: 400px;
+  #refraction {
+    display: flex;
+    flex: 1 400px;
+    background-image: url(https://i.imgur.com/QnAPgwj.jpg);
+    background-position: center;
+    background-size: cover;
+  
+  }
+
+  #prework {
+    display: flex;
+    flex: 1 200px;
+    background-image: url(https://i.imgur.com/gLUpKQd.png);
+  }
+
+  #next-p {
+    height: 200px;
+  }
+
+  #next-p2 {
+    height: 200px;
   }
 
   .flexbox {
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
+  }
+
+  .footer {
+    padding: 30px;
+    text-align: center;
+    color: var(--light);
+    border-right: var(--light) solid 2px;
+    
+  }
+  
+  footer p {
+    margin: 5px;
+    font-size: 20px;
+    font-family: var(--font);
+  }
+
+  footer h3 {
+    font-size: 40px;
+    padding-bottom: 10px;
+    border-right: var(--light) solid 2px;
+    font-family: var(--font);
   }
