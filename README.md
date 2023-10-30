@@ -10,6 +10,6 @@ This project is the beginning of my professional portfolio. It has a section des
 https://www.w3schools.com/css/default.asp
 
 ## Links
-
-
+https://kylegru.github.io/Kyle-s-Web-Dev-Portfolio/
+https://github.com/KyleGru/Kyle-s-Web-Dev-Portfolio
 # Module-Two-Challenge-
