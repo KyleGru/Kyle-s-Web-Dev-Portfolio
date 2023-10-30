@@ -1,22 +1,25 @@
 :root {
   --light: whitesmoke;
   --font: monospace;
+  --background: #13293d70;
 }
 * {
     box-sizing: border-box;
   }
   
+  /*background image*/
   body {
     background-image:url(https://media.istockphoto.com/id/1341408852/video/colored-smoke-on-a-dark-background-blue-and-red-light-with-smoke.jpg?s=640x640&k=20&c=v2DQUY8IVbli_6FH_9KAs6YWRXlDdYiBJHfp7JFh7NY=);
     background-repeat: no-repeat;
     background-size: cover;
   }
   
+  /*header and navigation styling*/
   .header {
    padding: 10px;
    font-family: var(--font);
    color: var(--light);
-   background-color: #13293d70;
+   background-color: var(--background);
    border-radius: 70px 0 70px 0;
   }
 
@@ -49,18 +52,20 @@
     text-decoration: none;
   }
 
+  /*subtital styling*/
   .subtitle {
     font-family: var(--font);
     color: var(--light);
     font-size: 50px;
     float:right;
     padding: 25px 25px 25px 25px;
-    background-color: #13293d70;
+    background-color: var(--background);
     border-radius: 50% 0 50% 0;
     
     
   }
 
+  /*styling for about me sections*/
   .headshot {
     margin-left: 50%;
     margin-top: 10px;
@@ -71,11 +76,11 @@
     display: inline-flex;
     width: 25%;
     font-family: var(--font);
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 300px;
     padding-left: 25px;
     color: var(--light);
-    border-right: var(--light) solid 2px;
+    
     
   }
 
@@ -102,6 +107,20 @@
     flex-direction: row;
   }
 
+  /*styling for work sections*/
+  .work-title {
+    font-family: var(--font);
+    font-size: 30px;
+    color: var(--light);
+    margin-left: 14%;
+  }
+
+  .flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+  }
+
   .card {
     display: flex;
     flex-direction: column;
@@ -116,7 +135,7 @@
   .card h2 {
     display: flex;
     padding: 20px;
-    background: #13293d;
+    background: var(--background);
     color: var(--light);
   }
 
@@ -124,37 +143,35 @@
     display: flex;
     margin-left: 5px;
   }
-
+/*image of Horiseon website*/
   #refraction {
     display: flex;
     flex: 1 400px;
     background-image: url(https://i.imgur.com/QnAPgwj.jpg);
     background-position: center;
     background-size: cover;
-  
   }
-
+/*image of prework website*/
   #prework {
     display: flex;
     flex: 1 200px;
     background-image: url(https://i.imgur.com/gLUpKQd.png);
   }
-
+/*placeholder image*/
   #next-p {
-    height: 200px;
-  }
-
-  #next-p2 {
-    height: 200px;
-  }
-
-  .flexbox {
     display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
+    flex: 1 200px;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);
+  }
+/*placeholder image*/
+  #next-p2 {
+    display: flex;
+    flex: 1 200px;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);
   }
 
-  .footer {
+  /*footer styling*/
+  footer {
     padding: 30px;
     text-align: center;
     color: var(--light);
@@ -169,8 +186,9 @@
   }
 
   footer h3 {
+    text-align: left;
     font-size: 40px;
+    margin-left: 12%;
     padding-bottom: 10px;
-    border-right: var(--light) solid 2px;
     font-family: var(--font);
   }
