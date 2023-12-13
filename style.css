@@ -9,7 +9,7 @@
   
   /*background image*/
   body {
-    background-image:url(https://media.istockphoto.com/id/1341408852/video/colored-smoke-on-a-dark-background-blue-and-red-light-with-smoke.jpg?s=640x640&k=20&c=v2DQUY8IVbli_6FH_9KAs6YWRXlDdYiBJHfp7JFh7NY=);
+    background-image: linear-gradient(to right top, #0ce07a, #00e19a, #00e1b6, #00e0cc, #00dedc, #00d3e4, #00c7e8, #00bae8, #00a1e1, #0087d8, #006cc9, #184fb5);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -20,14 +20,17 @@
    font-family: var(--font);
    color: var(--light);
    background-color: var(--background);
-   border-radius: 70px 0 70px 0;
+   border-radius: 70px 10px 70px 10px;
+   padding: 20px 20px 20px 20px;
   }
 
   .header h1 {
     display: inline-block;
-    font-size: 50px;
-    background-color: rgba(247, 69, 69, 0.541);
-    border-radius: 15px 0 15px 0;
+    font-size: 70px;
+    background-color: rgba(18, 191, 230, 0.404);
+    border-radius: 70px 10px 70px 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .header nav {
@@ -56,14 +59,16 @@
   .subtitle {
     font-family: var(--font);
     color: var(--light);
-    font-size: 50px;
-    float:right;
-    padding: 25px 25px 25px 25px;
+    font-size: 80px;
+    padding: 50px 20px 50px 100px;
     background-color: var(--background);
-    border-radius: 50% 0 50% 0;
-    
-    
+    border-radius: 70px 10px 70px 10px;
   }
+  
+.fa-solid {
+  padding-top: 50px;
+  padding-left: 5px;
+}
 
   /*styling for about me sections*/
   .headshot {
@@ -73,12 +78,8 @@
   }
 
   .about-me {
-    display: inline-flex;
-    width: 25%;
     font-family: var(--font);
     font-size: 30px;
-    margin-top: 300px;
-    padding-left: 25px;
     color: var(--light);
     
     
@@ -89,23 +90,15 @@
   }
 
   .info {
-   display: flex;
-   flex-direction: row;
    font-family: var(--font);
    font-size: 20px;
    color: var(--light);
-   margin-left: 430px;
-   margin-bottom: 100px;
-   padding-bottom: 25px;
-   padding-top: 25px;
    text-align: justify;
-   
+   padding-left: 20px;
+   padding-right: 40px;
+   padding-top: 50px;
   }
   
-  #about {
-    display: flex;
-    flex-direction: row;
-  }
 
   /*styling for work sections*/
   .work-title {
